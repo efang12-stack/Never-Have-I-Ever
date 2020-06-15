@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		398FC36196A4E0447E0FB496 /* Pods_Never_Have_I_Ever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA26B3CA91AF7BBA9548A8 /* Pods_Never_Have_I_Ever.framework */; };
+		AAF333AE24945F83003E21BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333AD24945F83003E21BD /* AppDelegate.swift */; };
+		AAF333B024945F83003E21BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333AF24945F83003E21BD /* SceneDelegate.swift */; };
+		AAF333B224945F83003E21BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333B124945F83003E21BD /* ContentView.swift */; };
+		AAF333B424945F87003E21BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF333B324945F87003E21BD /* Assets.xcassets */; };
+		AAF333B724945F87003E21BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF333B624945F87003E21BD /* Preview Assets.xcassets */; };
+		AAF333BA24945F87003E21BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF333B824945F87003E21BD /* LaunchScreen.storyboard */; };
+		AAF333C2249526D0003E21BD /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333C1249526D0003E21BD /* PlayerView.swift */; };
+		AAF333C52495B565003E21BD /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333C42495B565003E21BD /* PlayerManager.swift */; };
+		AAF333C82496DF82003E21BD /* ModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333C72496DF82003E21BD /* ModeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C6E5DB75A93460AC87FF95D /* Pods-Never Have I Ever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Never Have I Ever.release.xcconfig"; path = "Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever.release.xcconfig"; sourceTree = "<group>"; };
+		AAF333AA24945F83003E21BD /* Never Have I Ever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Never Have I Ever.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF333AD24945F83003E21BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAF333AF24945F83003E21BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AAF333B124945F83003E21BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AAF333B324945F87003E21BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAF333B624945F87003E21BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAF333B924945F87003E21BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAF333BB24945F87003E21BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF333C1249526D0003E21BD /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		AAF333C324952B54003E21BD /* blow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blow.ttf; sourceTree = "<group>"; };
+		AAF333C42495B565003E21BD /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		AAF333C72496DF82003E21BD /* ModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeView.swift; sourceTree = "<group>"; };
+		D77914021771294B91B10AFD /* Pods-Never Have I Ever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Never Have I Ever.debug.xcconfig"; path = "Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever.debug.xcconfig"; sourceTree = "<group>"; };
+		DCEA26B3CA91AF7BBA9548A8 /* Pods_Never_Have_I_Ever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Never_Have_I_Ever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAF333A724945F83003E21BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398FC36196A4E0447E0FB496 /* Pods_Never_Have_I_Ever.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DAD4E5FF7FBDDF1EE922EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA26B3CA91AF7BBA9548A8 /* Pods_Never_Have_I_Ever.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAF333A124945F83003E21BD = {
+			isa = PBXGroup;
+			children = (
+				AAF333AC24945F83003E21BD /* Never Have I Ever */,
+				AAF333AB24945F83003E21BD /* Products */,
+				AE883E47A8C671ACCF2CC0A2 /* Pods */,
+				9DAD4E5FF7FBDDF1EE922EFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAF333AB24945F83003E21BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAF333AA24945F83003E21BD /* Never Have I Ever.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAF333AC24945F83003E21BD /* Never Have I Ever */ = {
+			isa = PBXGroup;
+			children = (
+				AAF333C324952B54003E21BD /* blow.ttf */,
+				AAF333AD24945F83003E21BD /* AppDelegate.swift */,
+				AAF333AF24945F83003E21BD /* SceneDelegate.swift */,
+				AAF333B124945F83003E21BD /* ContentView.swift */,
+				AAF333C1249526D0003E21BD /* PlayerView.swift */,
+				AAF333C72496DF82003E21BD /* ModeView.swift */,
+				AAF333C62495B56A003E21BD /* Managers */,
+				AAF333B324945F87003E21BD /* Assets.xcassets */,
+				AAF333B824945F87003E21BD /* LaunchScreen.storyboard */,
+				AAF333BB24945F87003E21BD /* Info.plist */,
+				AAF333B524945F87003E21BD /* Preview Content */,
+			);
+			path = "Never Have I Ever";
+			sourceTree = "<group>";
+		};
+		AAF333B524945F87003E21BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AAF333B624945F87003E21BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAF333C62495B56A003E21BD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AAF333C42495B565003E21BD /* PlayerManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AE883E47A8C671ACCF2CC0A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D77914021771294B91B10AFD /* Pods-Never Have I Ever.debug.xcconfig */,
+				9C6E5DB75A93460AC87FF95D /* Pods-Never Have I Ever.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAF333A924945F83003E21BD /* Never Have I Ever */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF333BE24945F87003E21BD /* Build configuration list for PBXNativeTarget "Never Have I Ever" */;
+			buildPhases = (
+				13453768710C18171A30645C /* [CP] Check Pods Manifest.lock */,
+				AAF333A624945F83003E21BD /* Sources */,
+				AAF333A724945F83003E21BD /* Frameworks */,
+				AAF333A824945F83003E21BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Never Have I Ever";
+			productName = "Never Have I Ever";
+			productReference = AAF333AA24945F83003E21BD /* Never Have I Ever.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAF333A224945F83003E21BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Ethan;
+				TargetAttributes = {
+					AAF333A924945F83003E21BD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = AAF333A524945F83003E21BD /* Build configuration list for PBXProject "Never Have I Ever" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAF333A124945F83003E21BD;
+			productRefGroup = AAF333AB24945F83003E21BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAF333A924945F83003E21BD /* Never Have I Ever */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAF333A824945F83003E21BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF333BA24945F87003E21BD /* LaunchScreen.storyboard in Resources */,
+				AAF333B724945F87003E21BD /* Preview Assets.xcassets in Resources */,
+				AAF333B424945F87003E21BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13453768710C18171A30645C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Never Have I Ever-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAF333A624945F83003E21BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF333C52495B565003E21BD /* PlayerManager.swift in Sources */,
+				AAF333AE24945F83003E21BD /* AppDelegate.swift in Sources */,
+				AAF333B024945F83003E21BD /* SceneDelegate.swift in Sources */,
+				AAF333B224945F83003E21BD /* ContentView.swift in Sources */,
+				AAF333C2249526D0003E21BD /* PlayerView.swift in Sources */,
+				AAF333C82496DF82003E21BD /* ModeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAF333B824945F87003E21BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF333B924945F87003E21BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAF333BC24945F87003E21BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAF333BD24945F87003E21BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAF333BF24945F87003E21BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77914021771294B91B10AFD /* Pods-Never Have I Ever.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Never Have I Ever/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VQUKD672F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Never Have I Ever/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanfang.Never-Have-I-Ever";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAF333C024945F87003E21BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6E5DB75A93460AC87FF95D /* Pods-Never Have I Ever.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Never Have I Ever/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VQUKD672F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Never Have I Ever/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanfang.Never-Have-I-Ever";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAF333A524945F83003E21BD /* Build configuration list for PBXProject "Never Have I Ever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF333BC24945F87003E21BD /* Debug */,
+				AAF333BD24945F87003E21BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF333BE24945F87003E21BD /* Build configuration list for PBXNativeTarget "Never Have I Ever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF333BF24945F87003E21BD /* Debug */,
+				AAF333C024945F87003E21BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAF333A224945F83003E21BD /* Project object */;
+}
