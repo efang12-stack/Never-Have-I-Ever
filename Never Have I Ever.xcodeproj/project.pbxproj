@@ -30,7 +30,6 @@
 		AAF333B924945F87003E21BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAF333BB24945F87003E21BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF333C1249526D0003E21BD /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		AAF333C324952B54003E21BD /* blow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blow.ttf; sourceTree = "<group>"; };
 		AAF333C42495B565003E21BD /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 		AAF333C72496DF82003E21BD /* ModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeView.swift; sourceTree = "<group>"; };
 		D77914021771294B91B10AFD /* Pods-Never Have I Ever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Never Have I Ever.debug.xcconfig"; path = "Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +77,6 @@
 		AAF333AC24945F83003E21BD /* Never Have I Ever */ = {
 			isa = PBXGroup;
 			children = (
-				AAF333C324952B54003E21BD /* blow.ttf */,
 				AAF333AD24945F83003E21BD /* AppDelegate.swift */,
 				AAF333AF24945F83003E21BD /* SceneDelegate.swift */,
 				AAF333B124945F83003E21BD /* ContentView.swift */,
@@ -115,7 +113,6 @@
 				D77914021771294B91B10AFD /* Pods-Never Have I Ever.debug.xcconfig */,
 				9C6E5DB75A93460AC87FF95D /* Pods-Never Have I Ever.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

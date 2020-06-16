@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct ModeView: View {
+    @EnvironmentObject var playerManager: PlayerManager
     var body: some View {
-        Text("Hello")
+        ZStack{
+            Image("background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+        }
+            .navigationBarTitle("Game Mode", displayMode: .inline)
     }
 }
 
 struct ModeView_Previews: PreviewProvider {
     static var previews: some View {
-        ModeView()
+        ModeView().environmentObject(PlayerManager())
     }
 }

@@ -12,7 +12,7 @@ import SwiftUI
 struct PlayerView: View {
     @EnvironmentObject var playerManager: PlayerManager
     @State var value: CGFloat = 0
-
+    @State var atLeast2 = false
     var body: some View {
         
         ZStack{
@@ -26,6 +26,7 @@ struct PlayerView: View {
                     .frame(width: UIScreen.main.bounds.width / 1.2, height: 320, alignment: .center)
                     .padding(.bottom, -40)
                 if playerManager.numberOfPlayers != 0 {
+
                     ScrollView{
                         
                         ForEach(1..<playerManager.numberOfPlayers+1, id: \.self) {n in
@@ -39,7 +40,7 @@ struct PlayerView: View {
                     .padding(.bottom, 10)
                     
                 }
-               
+                
                 
                 NavigationLink(destination: ModeView()) {
                     HStack{
@@ -50,6 +51,8 @@ struct PlayerView: View {
                     .font(.custom("Hiragino Sans", size: 19))
                     }
                 }
+      
+            
                 .padding(.all, 15)
                 .padding([.leading, .trailing], 15)
                 .background(Color.white)
