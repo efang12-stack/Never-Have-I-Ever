@@ -32,16 +32,21 @@ struct ModeView: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                     }
+//                    NavigationLink(destination: PlayerView()) {
+//                        Image(systemName: "chevron.left")
+//                            .font(.system(size: 24, weight: .bold))
+//                            .foregroundColor(.white)
+//                    }
                     
                     Text("Mode")
                         .foregroundColor(.white)
                         .font(.custom("Hiragino Sans", size: 25)).bold()
                         .frame( alignment: .center)
-                    
+                     
                     Spacer(minLength: 0)
                 }
                     
-                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! + 8)
+                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! + 23)
                 .padding([.horizontal, .bottom])
                 Spacer()
                 VStack(spacing: -16){
@@ -82,7 +87,7 @@ struct ModeView: View {
                     .font(.custom("Hiragino Sans", size: 24))
                 .bold()
                     .foregroundColor(.white)
-                
+                    
                 Spacer(minLength: 0)
             }
             .padding(.bottom, 250)

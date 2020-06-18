@@ -14,7 +14,7 @@ struct PlayerView: View {
     @State var value: CGFloat = 0
     @State var show = false
     var body: some View {
-        
+    
         ZStack{
             Image("background")
                 .resizable()
@@ -51,7 +51,8 @@ struct PlayerView: View {
                     .font(.custom("Hiragino Sans", size: 19))
                     }
                 }
-      
+                .opacity((playerManager.playerNameArray[0] == "" || playerManager.playerNameArray[1] == "") ? 0.35 : 1)
+                .disabled((playerManager.playerNameArray[0] == "" || playerManager.playerNameArray[1] == "") ? true : false)
             
                 .padding(.all, 15)
                 .padding([.leading, .trailing], 15)
