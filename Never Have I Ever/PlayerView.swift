@@ -12,7 +12,7 @@ import SwiftUI
 struct PlayerView: View {
     @EnvironmentObject var playerManager: PlayerManager
     @State var value: CGFloat = 0
-    @State var atLeast2 = false
+    @State var show = false
     var body: some View {
         
         ZStack{
@@ -42,7 +42,7 @@ struct PlayerView: View {
                 }
                 
                 
-                NavigationLink(destination: ModeView()) {
+                NavigationLink(destination: ModeView(show: $show), isActive: self.$show) {
                     HStack{
                         Image(systemName: "play.circle.fill")
                             .foregroundColor(Color(.systemBlue))
