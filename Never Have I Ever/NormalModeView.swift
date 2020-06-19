@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct NormalModeView: View {
+    @EnvironmentObject var questionManager: QuestionManager
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(questionManager.chosenArray[2])
     }
 }
 

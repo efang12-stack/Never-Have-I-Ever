@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		398FC36196A4E0447E0FB496 /* Pods_Never_Have_I_Ever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA26B3CA91AF7BBA9548A8 /* Pods_Never_Have_I_Ever.framework */; };
+		AA4387B0249C3FD500049218 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4387AF249C3FD500049218 /* QuestionManager.swift */; };
 		AA839E2C249AF66400D05955 /* NormalModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA839E2B249AF66400D05955 /* NormalModeView.swift */; };
 		AAF333AE24945F83003E21BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333AD24945F83003E21BD /* AppDelegate.swift */; };
 		AAF333B024945F83003E21BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF333AF24945F83003E21BD /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		9C6E5DB75A93460AC87FF95D /* Pods-Never Have I Ever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Never Have I Ever.release.xcconfig"; path = "Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever.release.xcconfig"; sourceTree = "<group>"; };
+		AA4387AF249C3FD500049218 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		AA839E2B249AF66400D05955 /* NormalModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalModeView.swift; sourceTree = "<group>"; };
 		AAF333AA24945F83003E21BD /* Never Have I Ever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Never Have I Ever.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF333AD24945F83003E21BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				AAF333C42495B565003E21BD /* PlayerManager.swift */,
+				AA4387AF249C3FD500049218 /* QuestionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				AAF333C52495B565003E21BD /* PlayerManager.swift in Sources */,
 				AAF333AE24945F83003E21BD /* AppDelegate.swift in Sources */,
 				AA839E2C249AF66400D05955 /* NormalModeView.swift in Sources */,
+				AA4387B0249C3FD500049218 /* QuestionManager.swift in Sources */,
 				AAF333B024945F83003E21BD /* SceneDelegate.swift in Sources */,
 				AAF333B224945F83003E21BD /* ContentView.swift in Sources */,
 				AAF333C2249526D0003E21BD /* PlayerView.swift in Sources */,
