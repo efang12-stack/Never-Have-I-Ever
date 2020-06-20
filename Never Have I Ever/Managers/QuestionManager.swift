@@ -11,6 +11,6 @@ import SwiftUI
 
 class QuestionManager: ObservableObject {
     @Published var chosenArray: [String] = ["", ""]
-   
+    @Published var dare: String = ""
 }
 
