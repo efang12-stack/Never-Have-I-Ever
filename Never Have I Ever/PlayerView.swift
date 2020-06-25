@@ -21,7 +21,7 @@ struct PlayerView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 
-                Image("Logo3")
+                Image("Logo")
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width / 1.2, height: 320, alignment: .center)
                     .padding(.bottom, -40)
@@ -83,3 +83,9 @@ struct PlayerView: View {
     }
 }
 
+
+struct PlayerView_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}
