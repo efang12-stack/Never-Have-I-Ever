@@ -46,8 +46,8 @@ struct ContentView: View {
                             .foregroundColor(Color(.systemBlue))
                     }
                 }
-                .padding(.all, 20)
-                .padding([.leading, .trailing], 15)
+                .padding(.all, 18)
+                .padding([.leading, .trailing], 10)
                 .background(Color.white)
                 .cornerRadius(15)
                 .shadow(color: .black, radius: 1, x: 0, y: 0)
