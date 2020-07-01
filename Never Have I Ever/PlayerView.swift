@@ -16,15 +16,18 @@ struct PlayerView: View {
     var body: some View {
     
         ZStack{
-            Image("background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
+            
+                Image("background")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+            
             VStack{
                 
-                Image("Logo")
-                    .resizable()
-                    .frame(width: UIScreen.main.bounds.width / 1.2, height: 320, alignment: .center)
-                    .padding(.bottom, -40)
+                    Image("Logo")
+                        .resizable()
+                        .frame(width: UIScreen.main.bounds.width / 1.2, height: 320, alignment: .center)
+                        .padding(.bottom, -40)
+                
                 if playerManager.numberOfPlayers != 0 {
 
                     ScrollView{
@@ -42,14 +45,18 @@ struct PlayerView: View {
                 }
                 
                 
-                NavigationLink(destination: ModeView(show: $show), isActive: self.$show) {
-                    HStack{
-                        Image(systemName: "play.circle.fill")
-                            .foregroundColor(Color(.systemBlue))
-                    Text("Start")
-                    .foregroundColor(Color(.systemBlue))
-                    .font(.custom("Hiragino Sans", size: 19))
-                    }
+                    NavigationLink(destination: ModeView(show: $show), isActive: self.$show) {
+                        
+                            HStack{
+                                
+                                Image(systemName: "play.circle.fill")
+                                    .foregroundColor(Color(.systemBlue))
+                                
+                                Text("Start")
+                                    .foregroundColor(Color(.systemBlue))
+                                    .font(.custom("Hiragino Sans", size: 19))
+                                }
+                        
                 }
                 .opacity((playerManager.playerNameArray[0] == "" || playerManager.playerNameArray[1] == "") ? 0.35 : 1)
                 .disabled((playerManager.playerNameArray[0] == "" || playerManager.playerNameArray[1] == "") ? true : false)
@@ -68,7 +75,7 @@ struct PlayerView: View {
                     
                     let height = value.height
                     
-                    self.value = height
+                    self.value = height - 70
                 }
                 
                 NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
