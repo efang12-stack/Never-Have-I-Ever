@@ -26,10 +26,10 @@ struct NormalModeView: View {
     
     var body: some View {
         
-        ZStack{
+    ZStack{
             LinearGradient(gradient: Gradient(colors: [questionManager.firstColor, questionManager.secondColor]), startPoint: .bottom, endPoint: .top)
                 .edgesIgnoringSafeArea(.all)
-            .onTapGesture {
+                .onTapGesture {
                 if self.counter == 6 {
                   
                     self.sizeText = 58
@@ -61,6 +61,8 @@ struct NormalModeView: View {
                     self.font = "Verdana"
                     if self.counter < 19 {
                 self.questionDisplay = self.questionManager.chosenArray[Int.random(in: 0...self.questionManager.chosenArray.count-1)]
+//
+//                        self.actionDisplay = self.questionManager.dareArray[Int.random(in: 0...self.questionManager.dareArray.count-1)]
                     }
                 }
                 
@@ -75,13 +77,13 @@ struct NormalModeView: View {
                     self.actionDisplay = "Get Ready!"
                 }
                 if self.counter == 15 {
-                   self.actionDisplay = "Give 2 people a dare"
+                   self.actionDisplay = "Give two dares to one person of your choice"
                     self.showLastPick.toggle()
                     self.showButton.toggle()
 
                 }
                 if self.counter == 16 {
-                    self.actionDisplay = "Give 3 people a dare"
+                    self.actionDisplay = "Give half of the people in the room a dare"
                     
                     self.nameChooser = ""
                 }
@@ -97,149 +99,54 @@ struct NormalModeView: View {
                                 
             }
             
-            VStack{
+        VStack{
                 
               
-                
-                VStack{
-                    Text("Pick a name:")
-                    .opacity(showLastPick ? 1 : 0)
-                    .foregroundColor(.white)
-                    .font(.custom("Verdana", size: 20))
-                        .padding(.bottom)
-//                    ZStack{
-//                     Image
+                    VStack{
                         
-                    Text(nameChooser)
-                        .foregroundColor(.white)
-                        .font(.custom("Verdana Bold", size: 25))
-                        .padding(.bottom, 40)
+                        Text("Pick a name:")
                         .opacity(showLastPick ? 1 : 0)
-//                    }
-                    Button(action: {
-                        var player = self.playerManager.playerNameArray.randomElement()
-                        while player == "" {
-                            player = self.playerManager.playerNameArray.randomElement()
-                        }
-                        self.nameChooser = player!
+                        .foregroundColor(.white)
+                        .font(.custom("Verdana", size: 20))
+                            .padding(.bottom)
+
+                            
+                        Text(nameChooser)
+                            .foregroundColor(.white)
+                            .font(.custom("Verdana Bold", size: 25))
+                            .padding(.bottom, 40)
+                            .opacity(showLastPick ? 1 : 0)
                         
-                    }) {
-                        Text("Pick")
-                            .foregroundColor(questionManager.secondColor)
-                            .font(.system(size: 20))
+
+                        Button(action: {
+                                var player = self.playerManager.playerNameArray.randomElement()
+                                while player == "" {
+                                player = self.playerManager.playerNameArray.randomElement()
+                                }
+                                self.nameChooser = player!
+                            
+                        }) {
+                                Text("Pick")
+                                    .foregroundColor(questionManager.secondColor)
+                                    .font(.system(size: 20))
+                        }
+                        .padding(.all, 10)
+                        .padding([.leading, .trailing], 20)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .shadow(color: .black, radius: 1, x: 0, y: 0)
+                        .opacity(showButton ? 1 : 0)
+                        
                     }
-                    .padding(.all, 10)
-                    .padding([.leading, .trailing], 20)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .shadow(color: .black, radius: 1, x: 0, y: 0)
-                    .opacity(showButton ? 1 : 0)
-                }
-                .padding(.bottom, 140)
+                    .padding(.bottom, 140)
                 
-                
-        Text(questionDisplay)
-            .onTapGesture {
-                
-                if self.counter == 6 {
+                VStack(spacing: 30){
+                        
+                        Text(questionDisplay)
+                            .onTapGesture {
                     
-                    self.sizeText = 58
-                    self.font = "Verdana Bold"
-                    self.questionDisplay = "Round 2"
-                    self.counter+=1
-                }
-                else if self.counter == 13 {
-                    self.sizeText = 58
-                    self.font = "Verdana Bold"
-                    self.questionDisplay = "Last Round"
-                    self.counter+=1
-                }
-                else if self.counter == 17{
-                    self.sizeText = 58
-                    self.font = "Verdana Bold"
-                    self.questionDisplay = "Finished!"
-                    
-                }
-                else if self.counter > 17 {
-                    self.sizeText = 58
-                    self.font = "Verdana Bold"
-                    self.questionDisplay = "Finished!"
-                    self.counter+=1
-                }
-                else{
-                    self.counter+=1
-                    self.sizeText = 18
-                    self.font = "Verdana"
-                    if self.counter < 19 {
-                        self.questionDisplay = self.questionManager.chosenArray[Int.random(in: 0...self.questionManager.chosenArray.count-1)]
-                    }
-                }
-                
-                if self.counter == 1 || self.counter == 7 || self.counter == 8  || self.counter == 18 {
-                    self.showText.toggle()
-                    
-                }
-                
-                if self.counter == 7 {
-                    self.actionDisplay = "Give out a dare"
-                }
-                if self.counter == 14 {
-                    self.actionDisplay = "Get Ready!"
-                }
-                if self.counter == 15 {
-                    self.actionDisplay = "Give 2 people a dare"
-                    self.showLastPick.toggle()
-                    self.showButton.toggle()
-                    
-                }
-                if self.counter == 16 {
-                    self.actionDisplay = "Give 3 people a dare"
-                    
-                    self.nameChooser = ""
-                }
-                if self.counter == 17 {
-                    self.actionDisplay = "Give everyone a dare"
-                    
-                    self.nameChooser = ""
-                }
-                if self.counter == 18 {
-                    self.showButton.toggle()
-                    self.showLastPick.toggle()
-                }
-                
-                
-        }
-            .multilineTextAlignment(.center)
-            .frame(width: UIScreen.main.bounds.width / 1.2 )
-            .font(.custom(font, size: CGFloat(sizeText)))
-            .foregroundColor(.white)
-            .shadow(radius: 15)
-            .offset(x: self.animations ? 0 : -1500, y: 0)
-            .alert(isPresented: $showAlert) {
-            Alert(title: Text("Warning"), message: Text("This mode is for teens 17 years of age or older. By continuing, you agree that you are at least 17 years of age."), dismissButton: .default(Text("Ok"))
-                
-                
-            )
-        }
-            .onAppear {
-            withAnimation(Animation.easeIn.speed(0.3)) {
-                self.animations.toggle()
-                
-                }
-            
-        }
-            .padding(.bottom, 30)
-                
-                Text(actionDisplay)
-                    .multilineTextAlignment(.center)
-                    .frame(width: UIScreen.main.bounds.width / 1.2 )
-                    .foregroundColor(.white)
-                    .font(.custom("Verdana Bold", size: 20))
-                    .opacity(showText ? 1 : 0)
-                    .onTapGesture {
-                   
                     if self.counter == 6 {
-                      
+                        
                         self.sizeText = 58
                         self.font = "Verdana Bold"
                         self.questionDisplay = "Round 2"
@@ -264,16 +171,19 @@ struct NormalModeView: View {
                         self.counter+=1
                     }
                     else{
-                    self.counter+=1
+                        self.counter+=1
                         self.sizeText = 18
                         self.font = "Verdana"
                         if self.counter < 19 {
-                    self.questionDisplay = self.questionManager.chosenArray[Int.random(in: 0...self.questionManager.chosenArray.count-1)]
+                            self.questionDisplay = self.questionManager.chosenArray[Int.random(in: 0...self.questionManager.chosenArray.count-1)]
+                            
+    //                        self.actionDisplay = self.questionManager.dareArray[Int.random(in: 0...self.questionManager.dareArray.count-1)]
                         }
                     }
                     
                     if self.counter == 1 || self.counter == 7 || self.counter == 8  || self.counter == 18 {
                         self.showText.toggle()
+                        
                     }
                     
                     if self.counter == 7 {
@@ -283,37 +193,141 @@ struct NormalModeView: View {
                         self.actionDisplay = "Get Ready!"
                     }
                     if self.counter == 15 {
-                       self.actionDisplay = "Give 2 people a dare"
+                        self.actionDisplay = "Give 2 dares to one person"
                         self.showLastPick.toggle()
-                   self.showButton.toggle()
-
+                        self.showButton.toggle()
+                        
                     }
                     if self.counter == 16 {
-                        self.actionDisplay = "Give 3 people a dare"
-                      
+                        self.actionDisplay = "Give half of the people in the room a dare"
+                        
                         self.nameChooser = ""
                     }
                     if self.counter == 17 {
-                       self.actionDisplay = "Give everyone a dare"
+                        self.actionDisplay = "Give everyone a dare"
+                        
                         self.nameChooser = ""
                     }
                     if self.counter == 18 {
                         self.showButton.toggle()
                         self.showLastPick.toggle()
                     }
-                   
                     
-                }
-               
+                    
             }
-            .padding(.top, -230)
-            .onAppear {
-                if self.questionManager.firstColor == Color.dareFirstColor {
-                    self.showAlert.toggle()
-                }
-                                
+                            .multilineTextAlignment(.center)
+                            .frame(width: UIScreen.main.bounds.width / 1.2 )
+                            .font(.custom(font, size: CGFloat(sizeText)))
+                            .foregroundColor(.white)
+                            .shadow(radius: 15)
+                            .offset(x: self.animations ? 0 : -1500, y: 0)
+                            .alert(isPresented: $showAlert) {
+                                Alert(title: Text("Warning"), message: Text("This mode is for teens 17 years of age or older. By continuing, you agree that you are at least 17 years of age."), dismissButton: .default(Text("Ok"))
+                    
+                    
+                                )
+                                }
+                                .onAppear {
+                        
+                                    withAnimation(Animation.easeIn.speed(0.3)) {
+                                        self.animations.toggle()
+                    
+                                    }
 
-            }
+                                }
+    //            .padding(.bottom, 30)
+
+                    
+                    Text(actionDisplay)
+                        .multilineTextAlignment(.center)
+                        .frame(width: UIScreen.main.bounds.width / 1.2 )
+                        .foregroundColor(.white)
+                        .font(.custom("Verdana Bold", size: 20))
+                        .opacity(showText ? 1 : 0)
+                        .onTapGesture {
+                    
+                        if self.counter == 6 {
+                        
+                            self.sizeText = 58
+                            self.font = "Verdana Bold"
+                            self.questionDisplay = "Round 2"
+                            self.counter+=1
+                        }
+                        else if self.counter == 13 {
+                            self.sizeText = 58
+                            self.font = "Verdana Bold"
+                            self.questionDisplay = "Last Round"
+                            self.counter+=1
+                        }
+                        else if self.counter == 17{
+                            self.sizeText = 58
+                            self.font = "Verdana Bold"
+                            self.questionDisplay = "Finished!"
+                            
+                        }
+                        else if self.counter > 17 {
+                            self.sizeText = 58
+                            self.font = "Verdana Bold"
+                            self.questionDisplay = "Finished!"
+                            self.counter+=1
+                        }
+                        else{
+                        self.counter+=1
+                            self.sizeText = 18
+                            self.font = "Verdana"
+                            if self.counter < 19 {
+                        self.questionDisplay = self.questionManager.chosenArray[Int.random(in: 0...self.questionManager.chosenArray.count-1)]
+    //
+    //                            self.actionDisplay = self.questionManager.dareArray[Int.random(in: 0...self.questionManager.dareArray.count-1)]
+                            }
+                        }
+                        
+                        if self.counter == 1 || self.counter == 7 || self.counter == 8  || self.counter == 18 {
+                            self.showText.toggle()
+                        }
+                        
+                        if self.counter == 7 {
+                            self.actionDisplay = "Give out a dare"
+                        }
+                        if self.counter == 14 {
+                            self.actionDisplay = "Get Ready!"
+                        }
+                        if self.counter == 15 {
+                        self.actionDisplay = "Give 2 dares to one person of your choice"
+                            self.showLastPick.toggle()
+                    self.showButton.toggle()
+
+                        }
+                        if self.counter == 16 {
+                            self.actionDisplay = "Give half of the people in the room a dare"
+                        
+                            self.nameChooser = ""
+                        }
+                        if self.counter == 17 {
+                        self.actionDisplay = "Give everyone a dare"
+                            self.nameChooser = ""
+                        }
+                        if self.counter == 18 {
+                            self.showButton.toggle()
+                            self.showLastPick.toggle()
+                        }
+                    
+                        
+                    }
+                        
+                    }
+                
+        }
+                .padding(.top, -230)
+                .onAppear {
+                    
+                        if self.questionManager.firstColor == Color.dareFirstColor {
+                            self.showAlert.toggle()
+                        }
+                                
+                }
+        
+            //X Button
             VStack{
                 
                     HStack{
@@ -333,6 +347,8 @@ struct NormalModeView: View {
                 
                 Spacer()
             }
+            
+            
         }
         
     

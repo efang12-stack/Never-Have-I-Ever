@@ -27,7 +27,7 @@
 		AA4387AF249C3FD500049218 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		AA48CC48249EE55D006EA4B9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AA839E2B249AF66400D05955 /* NormalModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalModeView.swift; sourceTree = "<group>"; };
-		AAF333AA24945F83003E21BD /* Never Have I Ever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Never Have I Ever.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF333AA24945F83003E21BD /* Never Dare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Never Dare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF333AD24945F83003E21BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF333AF24945F83003E21BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AAF333B124945F83003E21BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		AAF333AB24945F83003E21BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAF333AA24945F83003E21BD /* Never Have I Ever.app */,
+				AAF333AA24945F83003E21BD /* Never Dare.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			);
 			name = "Never Have I Ever";
 			productName = "Never Have I Ever";
-			productReference = AAF333AA24945F83003E21BD /* Never Have I Ever.app */;
+			productReference = AAF333AA24945F83003E21BD /* Never Dare.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -386,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanfang.Never-Have-I-Ever";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Never Dare";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -408,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanfang.Never-Have-I-Ever";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Never Dare";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
