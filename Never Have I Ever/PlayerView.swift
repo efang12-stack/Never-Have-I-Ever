@@ -20,6 +20,9 @@ struct PlayerView: View {
                 Image("background")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
+                    .onTapGesture {
+                        UIApplication.shared.endEditing()
+                    }
             
             VStack{
                 

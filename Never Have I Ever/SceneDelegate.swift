@@ -9,7 +9,7 @@
 import UIKit
 import SwiftUI
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate, UIGestureRecognizerDelegate {
 
     var window: UIWindow?
 
@@ -23,6 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let player = PlayerManager()
         let question = QuestionManager()
         let contentView = ContentView().environmentObject(player).environmentObject(question)
+        
+         
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -31,6 +33,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -63,4 +67,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
+
 
