@@ -26,7 +26,7 @@ struct PlayerView: View {
             
             VStack{
                 
-                    Image("Logo")
+                    Image("Logo3")
                         .resizable()
                         .frame(width: UIScreen.main.bounds.width / 1.2, height: 320, alignment: .center)
                         .padding(.bottom, -40)

@@ -90,7 +90,7 @@ struct NormalView: View {
                 self.questionManager.chosenArray = self.questionArray
                 self.questionManager.firstColor = Color.normFirstColor
                 self.questionManager.secondColor = Color.normSecondColor
-                print(self.questionArray.count)
+                
                 //302
         }
     }
@@ -113,15 +113,17 @@ struct SportsView: View {
                 self.questionManager.chosenArray = self.questionArray
                 self.questionManager.firstColor = Color.normFirstColor
                 self.questionManager.secondColor = Color.normSecondColor
-                print(self.questionArray.count)
+                
                 //101
         }
     }
 }
 
+
+
 struct DareView: View {
    
-
+    let productID = "com.ethanfang.NeverHaveIEver.AllModes"
     let questionArray = [ "If you have ever had a friend with benefits", "If you have ever had sex in a car", "If you have ever had sex on the first date", "If you have ever had a hickey", "If you have ever kissed on the first date", "If you have ever been caught having sex", "If you have ever changed clothes in public", "If you have ever had a crush with someone in this room", "If you have ever kissed someone in this room", "If you have ever cheated on someone", "If you have ever ghosted someone", "If you have ever lied about having a boyfriend/girlfriend", "If you have ever had a one night stand", "If you have ever watched adult videos", "If you have ever seen someone in this room naked", "If you have ever seen your bestfriend naked", "If you have ever gotten back with your ex", "If you have ever prank called someone", "If you have ever fantasized about someone in this room", "If you are still a virgin", "If you have ever uploaded an embarrassing video on the Internet", "If you have ever snooped on someone's social media accounts", "If you have ever cheated on an exam", "If you have ever lied to someone in this room", "If you have ever rejected someone", "If you have ever dated two people at the same time", "If you have ever kissed someone that you didn't like", "If you have ever DM'ed a model", "If you have ever blocked someone on social media", "If you have ever sent someone a gift on Valentine's Day", "If you have ever kissed someone and regretted it", "If you have ever been to scared to talk to someone", "If you have ever farted in class", "If you have ever sharted", "If you have ever been kicked out of a friend group", "If you have ever been in a friend group with your ex", "If you have ever drawn a weiner on someone", "If you have ever hated someone in this room", "If you have ever been too shy to ask someone out", "If you have ever bought a condom", "If you have ever been on birth control", "If you have ever played spin the bottle", "If you have ever hooked up with your friend's crush", "If you have ever dated your friend's crush", "If you have ever hooked up with someone while on a date with someone else", "If you have ever seduced someone", "If you have ever told someone that they had bad breath", "If you have ever pressured a friend to break up", "If you have ever had a crush on one of your teachers", "If you have ever had a crush on one of your friend's parents", "If you have ever worn underwear from someone of the opposite gender", "If you have ever talked your way out of a traffic ticket", "If you have ever told someone that they suck at kissing", "If you have ever had a secret relationship", "If you have ever told your ex that you want to get back together", "If you have ever gambled", "If you have ever lied to impress someone and got caught", "If you have ever smoked", "If you have ever drank alcohol", "If you have ever driven a car without your driver's license", "If you have ever lied about getting laid", "If you have ever broken up with someone", "If you have ever had a threesome", "If you have ever told a friend to break up with someone and they did", "If you have ever Netflix and chilled",  "If you have ever asked someone out at first sight", "If you have ever called your boyfriend or girlfriend the wrong name",  "If you have ever dated someone because they had a lot of money", "If you have ever dated someone with good looks and a bad personality", "If you have ever been the class clown in school", "If you have ever had a crush on your teacher", "If you have ever told a friend that you didn't like them", "If you have ever been told by a friend that they didn't like you", "If your friends have ever made plans in front of you", "If you have ever told someone over text that you like them", "If you have ever been in a fight", "If you have ever cursed at a teacher", "If you have ever been in a no trespassing zone", "If you have ever cheated on a test and were caught", "If you have ever been payed to help someone with homework", "If you have ever taken a test for someone", "If you have ever seen your parents cry", "If you have ever made your best friend cry", "If you have ever made a teacher cry", "If you have ever seen a teacher curse in front of you", "If you have ever slept in class", "If you have ever been caught watching adult videos", "If you have never kissed someone", "If you have ever been in a long distance relationship", "If you have ever traveled somewhere in another country just to meet someone", "If you have ever scammed someone", "If you have ever leaked someone's nudes", "If you have ever doxxed someone", "If you have ever been suspended from school", "If you have ever bullied someone at school", "If you have ever been in a viral video", "If you have ever been in the middle of a dance circle", "If you have ever posted a hate comment on social media", "If you have ever followed a trend because your friends did it", "If you have ever been to a club", "If you have ever ghosted someone after the first date", "If you have ever had a crush on a character in a movie or TV show"]
     @EnvironmentObject var questionManager: QuestionManager
     @Binding var showing: Bool
@@ -138,7 +140,7 @@ struct DareView: View {
                  self.questionManager.chosenArray = self.questionArray
                 self.questionManager.firstColor = Color.dareFirstColor
                 self.questionManager.secondColor = Color.dareSecondColor
-                  print(self.questionArray.count)
+
                 //103
         }
         
@@ -148,6 +150,8 @@ struct DareView: View {
 }
 
 struct NostalgicView : View {
+    
+    let productID = "com.ethanfang.NeverHaveIEver.AllModes"
     let questionArray = ["If you have ever owned a Gameboy", "If you have never watched Cartoon Network", "If you have never watched Nickelodeon", "If you have ever used a scooter board in elementary school", "If you have never listened to Hey There Delilah", "If you have ever played Club Penguin", "If you have never owned a Wii", "If you have ever owned SillyBandz", "If you have ever owned BeyBlades", "If you have ever played with Bakugans", "If you have never played with Pokémon cards", "If you have ever made a Rainbowloom", "If you have ever owned a PSP", "If you have ever played Poptropica", "If you have ever eaten Lunchables", "If you have ever played the Concentration Handclap game", "If you have ever eaten Dunkaroos", "If you have ever played Super Mario Galaxy", "If you have never owned an XBox 360", "If you have never owned a PlayStation 3", "If you have never watched Spongebob", "If you have never watched the Simpsons", "If you have ever watched the Teletubbies", "If you have ever learned cursive in elementary school", "If you have ever bought a poster at the Scholastic bookfair", "If you have never bought a book at the Scholastic bookfair", "If you have ever bought Invisible Ink at the bookfair", "If you have ever drawn the cartoon \"S\" in school because you were bored", "If you have ever gone under the parachute in elementary school", "If you have ever typed 5319009 on a calculator", "If you have ever collected Box Tops at school", "If you have ever done a fake mechanical pencil shot", "If you have ever had to take Flintstone vitamin gummies", "If you have never bought a Lego set", "If you have ever tried to make a ball using Play-Doh", "If you have ever watched The Suite Life of Zack & Cody on Disney Channel", "If you have ever played Minecraft with your friends", "If you have ever owned a Nintendo DS", "If you have ever watched Bill Nye videos in class", "If you have ever watched The Magic School Bus in class", "If you have ever watched Kenny the Shark", "If you have ever watched Dragon Tales", "If you have ever sat on the Buddy Bench", "If you have ever gotten stuck on a swing", "If you have ever owned a flip phone", "If you have ever owned a Blackberry", "If you have ever played Candy Crush", "If you have ever played Jetpack Joyride", "If you have ever played Clash of Clans", "If you have ever played Doodle Jump", "If you have ever drank Danimals yogurt", "If you have never used a hula hoop", "If you have ever watched The Adventures of Sharkboy and Lavagirl", "If you have never watched a Harry Potter movie", "If you have ever watched The Annoying Orange on Youtube", "If you have ever watched Hey It's Fred on Youtube", "If you have never watched ICarly", "If you have ever read a Geronimo Stilton book", "If you have ever read a Magic Treehouse book", "If you have ever read 39 Clues book", "If you have never eaten a Happy Meal at McDonalds", "If you have ever watched The Backyardigans", "If you have ever watched the Wonder Pets", "If you still have a Webkin", "If you still have a Pillow Pet", "If you ever spent money on Club Penguin", "If you have ever bought a Kidz Bop album", "If you have ever used a ZooPals plate", "If you have ever watched the TV show Total Drama Island on Cartoon Network", "If you have ever watched Zoey 101 on Nickelodeon", "If you have ever watched Victorious on Nickelodeon", "If you have never played Wii Sports", "If you have never played Super Smash Bros", "If you have never watched a Tom and Jerry cartoon", "If you have never watched a Stars Wars movie", "If you have never played games on Coolmath Games", "If you have ever watched Drake and Josh", "If you have never watched a Home Alone movie", "If you have ever listened to a Big Time Rush song", "If you have never listened to an Imagine Dragons song", "If you have ever had a Nokia phone", "If you still own a yearbook from elementary school", "If you have ever owned an IPod", "If you have ever owned an IPod Shuffle", "If you still own an IPod", "If you have never played Plants vs. Zombies on the IPhone", "If you have never played Temple Run on the IPhone", "If you have ever watched Gravity Falls on Disney Channel", "If you have ever watched The Powerpuff Girls on Cartoon Network", "If you have never watched a Scooby Doo episode", "If you have ever owned the Mario Kart Wii game", "If you have ever bought a Pokemon Card booster box", "If you have never listened to a One Direction song", "If you have ever played Heads Up 7 Up in school", "If you currently own an app that was created before 2013", "If you know what show Tori Vega is from", "If you know what show Austin Moon is from", "If you have ever read the book \"No, David!\" as a kid", "If you have ever watched the video Dumb Ways To Die on Youtube", "If you have ever watched Blues Clues", "If you have ever rented a Blockbuster movie", "If you have ever bought a toy from Toys R Us"]
     @EnvironmentObject var questionManager: QuestionManager
     @Binding var showing: Bool
@@ -163,11 +167,19 @@ struct NostalgicView : View {
                         self.questionManager.chosenArray = self.questionArray
                     self.questionManager.firstColor = Color.nostalgicFirstColor
                     self.questionManager.secondColor = Color.nostalgicSecondColor
-                    print(self.questionArray.count)
+//
                     //102
                }
     }
+    
+
+    
+    
 }
+
+
+
+
 
 
 struct ModeView_Previews: PreviewProvider {
