@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct ContentView: View {
     
@@ -23,17 +24,20 @@ struct ContentView: View {
                 Image("Logo3")
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width / 1.2, height: 320, alignment: .center)
+                    .padding(.bottom, -30)
                 Text("Players:")
                     .foregroundColor(Color.white)
                     .font(.custom("Hiragino Sans", size: 21))
                 
+                    
+
                 Picker(selection: $playerManager.index, label: Text("Players")) {
                     ForEach(0 ..< playerArray.count) {
                         Text(String(self.playerArray[$0]))
                             .foregroundColor(Color.white)
                             .tag($0)
                     }
-                    
+
                 }.labelsHidden()
                 NavigationLink(destination: PlayerView().onAppear(){
                     self.playerManager.numberOfPlayers = self.playerArray[self.playerManager.index]
@@ -51,17 +55,43 @@ struct ContentView: View {
                 .background(Color.white)
                 .cornerRadius(15)
                 .shadow(color: .black, radius: 1, x: 0, y: 0)
-                Spacer()
+
+                    AdView()
+                        .frame(width: UIScreen.main.bounds.width / 1.2 , height: 60)
+                        .padding(.top, 17)
+                    
             }
             .padding(.bottom, 90)
             
             
+            
+            
         }
         
+        
         }
+    .navigationBarTitle("")
+    .navigationBarHidden(true)
         
     }
     
+    
+}
+
+struct AdView : UIViewRepresentable {
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        //sample banner right now
+        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        return banner
+        }
+    
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView>) {
+        
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
