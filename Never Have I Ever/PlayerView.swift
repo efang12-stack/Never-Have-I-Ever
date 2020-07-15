@@ -70,6 +70,10 @@ struct PlayerView: View {
                 .cornerRadius(10)
                 .shadow(color: .black, radius: 1, x: 0, y: 0)
                 
+                AdView()
+                .frame(width: UIScreen.main.bounds.width / 1.2 , height: 60)
+                                       .padding(.top, 17)
+                
             }
             .offset(y: -self.value).animation(.spring()).onAppear{
                 NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
