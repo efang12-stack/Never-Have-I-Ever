@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import GoogleMobileAds
 
 struct PlayerView: View {
     @EnvironmentObject var playerManager: PlayerManager
@@ -96,6 +96,8 @@ struct PlayerView: View {
         
     }
 }
+
+
 
 
 struct PlayerView_Previews: PreviewProvider {

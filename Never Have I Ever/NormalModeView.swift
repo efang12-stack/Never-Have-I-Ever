@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct NormalModeView: View {
     @State var questionDisplay = "Round 1"
@@ -52,12 +53,16 @@ struct NormalModeView: View {
                     self.font = "Verdana Bold"
                     self.questionDisplay = "Finished!"
                     self.counter+=1
+                    
+                    SKStoreReviewController.requestReview()
                 }
                 else if self.counter > 21 {
                     self.sizeText = 58
                     self.font = "Verdana Bold"
                     self.questionDisplay = "Finished!"
                     self.counter+=1
+                    
+                    
                 }
                 else{
                 self.counter+=1
@@ -65,6 +70,8 @@ struct NormalModeView: View {
                     self.font = "Verdana"
                     if self.counter < 23 {
                 self.questionDisplay = self.questionManager.chosenArray[Int.random(in: 0...self.questionManager.chosenArray.count-1)]
+                        
+                           
 
                     }
                 }
@@ -221,6 +228,9 @@ struct NormalModeView: View {
                                         self.font = "Verdana Bold"
                                         self.questionDisplay = "Finished!"
                                         self.counter+=1
+                                        
+                                        SKStoreReviewController.requestReview()
+
                                     }
                                     else if self.counter > 21 {
                                         self.sizeText = 58
@@ -234,6 +244,7 @@ struct NormalModeView: View {
                                         self.font = "Verdana"
                                         if self.counter < 23 {
                                     self.questionDisplay = self.questionManager.chosenArray[Int.random(in: 0...self.questionManager.chosenArray.count-1)]
+                                        
 
                                         }
                                     }
@@ -334,6 +345,9 @@ struct NormalModeView: View {
                                     self.font = "Verdana Bold"
                                     self.questionDisplay = "Finished!"
                                     self.counter+=1
+                                    
+                                    SKStoreReviewController.requestReview()
+
                                 }
                                 else if self.counter > 21 {
                                     self.sizeText = 58
