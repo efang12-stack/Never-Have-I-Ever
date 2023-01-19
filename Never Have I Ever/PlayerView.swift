@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import GoogleMobileAds
+
 
 struct PlayerView: View {
     @EnvironmentObject var playerManager: PlayerManager
@@ -23,6 +23,7 @@ struct PlayerView: View {
                     .onTapGesture {
                         UIApplication.shared.endEditing()
                     }
+            
             
             VStack{
                 
@@ -70,9 +71,9 @@ struct PlayerView: View {
                 .cornerRadius(10)
                 .shadow(color: .black, radius: 1, x: 0, y: 0)
                 
-                AdView()
-                .frame(width: UIScreen.main.bounds.width / 1.2 , height: 60)
-                                       .padding(.top, 17)
+//                AdView()
+//                .frame(width: UIScreen.main.bounds.width / 1.2 , height: 60)
+//                                       .padding(.top, 17)
                 
             }
             .offset(y: -self.value).animation(.spring()).onAppear{

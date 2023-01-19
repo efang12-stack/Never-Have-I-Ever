@@ -13,4 +13,5 @@ class PlayerManager: ObservableObject {
     @Published var numberOfPlayers = 0
     @Published var index = 0
     @Published var playerNameArray = ["", "", "", "", "", "", "", ""]
+   
 }

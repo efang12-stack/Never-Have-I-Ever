@@ -7,11 +7,12 @@
 //
 
 import SwiftUI
-import GoogleMobileAds
+
 
 struct ContentView: View {
     
     let playerArray = [2, 3, 4, 5, 6, 7, 8]
+    @State var show = false
     @EnvironmentObject var playerManager: PlayerManager
     var body: some View {
         NavigationView{
@@ -56,15 +57,30 @@ struct ContentView: View {
                 .cornerRadius(15)
                 .shadow(color: .black, radius: 1, x: 0, y: 0)
 
-                    AdView()
-                        .frame(width: UIScreen.main.bounds.width / 1.2 , height: 60)
-                        .padding(.top, 17)
+
                     
             }
             .padding(.bottom, 90)
             
             
-            
+            VStack{
+                
+               
+                
+                HStack{
+                    
+                     Spacer()
+                    
+                    NavigationLink(destination: SettingsView(show: $show), isActive: $show) {
+                        Image(systemName: "gear")
+                            .foregroundColor(.white)
+                            .font(.custom("Verdana Bold", size: 30))
+                    }
+                    .padding([.top, .trailing], 25)
+                }
+                
+                Spacer()
+            }
             
         }
         
@@ -78,21 +94,7 @@ struct ContentView: View {
     
 }
 
-struct AdView : UIViewRepresentable {
-    
-    func makeUIView(context: UIViewRepresentableContext<AdView>) -> GADBannerView {
-        let banner = GADBannerView(adSize: kGADAdSizeBanner)
-        //sample banner right now
-        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
-        banner.load(GADRequest())
-        return banner
-        }
-    
-    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView>) {
-        
-    }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

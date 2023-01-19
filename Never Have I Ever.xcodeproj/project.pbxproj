@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		398FC36196A4E0447E0FB496 /* Pods_Never_Have_I_Ever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA26B3CA91AF7BBA9548A8 /* Pods_Never_Have_I_Ever.framework */; };
+		AA22A39724CC80E3007C4E79 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA22A39624CC80E3007C4E79 /* SettingsView.swift */; };
 		AA4387B0249C3FD500049218 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4387AF249C3FD500049218 /* QuestionManager.swift */; };
 		AA48CC49249EE55D006EA4B9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48CC48249EE55D006EA4B9 /* Colors.swift */; };
 		AA839E2C249AF66400D05955 /* NormalModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA839E2B249AF66400D05955 /* NormalModeView.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		9C6E5DB75A93460AC87FF95D /* Pods-Never Have I Ever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Never Have I Ever.release.xcconfig"; path = "Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever.release.xcconfig"; sourceTree = "<group>"; };
+		AA22A39624CC80E3007C4E79 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AA4387AF249C3FD500049218 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		AA48CC48249EE55D006EA4B9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AA839E2B249AF66400D05955 /* NormalModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalModeView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				AAF333AD24945F83003E21BD /* AppDelegate.swift */,
 				AAF333AF24945F83003E21BD /* SceneDelegate.swift */,
+				AA22A39624CC80E3007C4E79 /* SettingsView.swift */,
 				AAF333B124945F83003E21BD /* ContentView.swift */,
 				AAF333C1249526D0003E21BD /* PlayerView.swift */,
 				AAF333C72496DF82003E21BD /* ModeView.swift */,
@@ -152,7 +155,6 @@
 				AAF333A624945F83003E21BD /* Sources */,
 				AAF333A724945F83003E21BD /* Frameworks */,
 				AAF333A824945F83003E21BD /* Resources */,
-				759EBD6E025B4419261100FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,23 +234,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		759EBD6E025B4419261100FA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +246,7 @@
 				AAF333AE24945F83003E21BD /* AppDelegate.swift in Sources */,
 				AA839E2C249AF66400D05955 /* NormalModeView.swift in Sources */,
 				AA4387B0249C3FD500049218 /* QuestionManager.swift in Sources */,
+				AA22A39724CC80E3007C4E79 /* SettingsView.swift in Sources */,
 				AAF333B024945F83003E21BD /* SceneDelegate.swift in Sources */,
 				AAF333B224945F83003E21BD /* ContentView.swift in Sources */,
 				AAF333C2249526D0003E21BD /* PlayerView.swift in Sources */,
